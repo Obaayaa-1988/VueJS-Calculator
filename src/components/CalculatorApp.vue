@@ -35,6 +35,17 @@ export default {
   props: {
     msg: String,
   },
+  data(){
+    return{
+      current: "",
+
+    }
+  },
+
+  methods: {
+
+  }
+
 };
 </script>
 
@@ -45,12 +56,13 @@ export default {
   background-color: rgb(98, 62, 182);
   height: 100vh;
   padding: 70px;
-  overflow: hidden;
+  
 }
 
 .title{
   color: whitesmoke;
-  margin-bottom: 3rem;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
   font-family: monospace;
 }
 /* calculator for dividing into grids */ 
