@@ -55,7 +55,7 @@ export default {
 .main-bg{
   background-color: rgb(98, 62, 182);
   height: 100vh;
-  padding: 70px;
+  padding: 50px;
   
 }
 
