@@ -4,8 +4,8 @@
 
     <div class="calculator">
       <div class="display">{{ current || "0" }}</div>
-      <div @click="sign" class="btn">%</div>
-      <div class="btn">+/-</div>
+      <div @click="percentage" class="btn">%</div>
+      <div @click="sign" class="btn">+/-</div>
       <div @click="clear" class="btn">C</div>
       <div class="btn color">+</div>
       <div class="btn">7</div>
@@ -50,6 +50,19 @@ export default {
     sign() {
       this.current = this.current.charAt(0)=== '-' ? this.current.slice(1) : `-${this.current}`;
     },
+
+    //appending the string current to the numbers
+
+    append(){
+
+    },
+
+
+    //divinding every number that is string after converting to a number by 100
+
+    percentage(){
+      this.current = parseFloat(this.current) / 100;
+    }
   },
 };
 </script>
