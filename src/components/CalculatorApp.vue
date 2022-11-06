@@ -54,7 +54,8 @@ export default {
     //appending the string current to the numbers
 
     append(number){
-      this.current = this.current + number
+      this.current = `${this.current}${number}`
+      // this.current = this.current + number
 
     },
 
