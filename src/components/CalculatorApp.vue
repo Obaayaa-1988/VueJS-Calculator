@@ -21,7 +21,7 @@
       <div @click="append('3')" class="btn">3</div>
       <div class="btn color">/</div>
       <div @click="append('0')" class="btn zero">0</div>
-      <div class="btn">.</div>
+      <div @click="dot()"     class="btn">.</div>
       <div class="btn color">=</div>
     </div>
   </div>
@@ -68,7 +68,7 @@ export default {
 
     //function for calculator dot only
     dot(){
-      if(this.current.indexOf('.') !== -1 ){
+      if(this.current.indexOf('.') === -1 ){
         this.append('.')
 
       }
