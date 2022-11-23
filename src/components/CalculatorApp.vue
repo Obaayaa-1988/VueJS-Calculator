@@ -64,7 +64,29 @@ export default {
 
     percentage(){
       this.current = parseFloat(this.current) / 100;
-    }
+    },
+
+    //function for calculator dot only
+    dot(){
+      if(this.current.indexOf('.') !== -1 ){
+        this.append('.')
+
+      }
+
+      
+    },
+
+    //adding, dividing, subtractin and multiply numbers
+    minus(){
+
+    },
+    divide(){
+
+    },
+    multiply(){
+
+    },
+    
   },
 };
 </script>
